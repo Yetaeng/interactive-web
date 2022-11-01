@@ -1,7 +1,9 @@
 # 🍔 Burger Lover
 ## 🖥 Preview
-![burger-lover-preview](https://user-images.githubusercontent.com/56065130/199156583-1036fc6d-6338-4610-a5ec-e04fe0ba2041.gif)
-[작품 구경가기](https://burger-lover.netlify.app)
+<p align="center">
+  <img width="600" height="350" alt="login" src="https://user-images.githubusercontent.com/56065130/199156583-1036fc6d-6338-4610-a5ec-e04fe0ba2041.gif">
+</p>
+<a href="https://burger-lover.netlify.app" target="_blank">작품 구경가기</a>
 <br /><br />
 
 ## 🧸 Description
@@ -13,7 +15,9 @@ HTML CSS
 <br /><br />
 
 ## 🖍 I learned
-### ✅ Intersection Observer API [docs 바로가기](https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API)
+### ✅ Intersection Observer API 
+<a href="https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API" target="_blank">docs 바로가기</a>
+
 예전에 당근 게임을 만들 때에는 `Element.getBoundingClientRect()`를 사용하여 게임 필드 내의 intersection 감지를 구현하였다. 하지만 더 복잡한 사이트의 경우, 해당 메서드를 호출하는 여러 이벤트 핸들러와 루프가 얽혀 있을 것이고 모든 코드가 메인 스레드에서 실행되므로 이중 어느 것 하나라도 성능 문제를 일으킬 가능성이 있었다.
 
 이에 대해 메인 스레드를 사용하지 않고, 교차 영역을 최적으로 관리하기 위해 Intersection Observer API를 사용한다.
@@ -39,7 +43,6 @@ const observer = new IntersectionObserver(entries => {
 const targets = document.querySelectorAll('.bg');
 targets.forEach(el => { observer.observe(el)});
 ```
-
 <br /><br />
 
 ## 👩‍💻 Improvement Directions
